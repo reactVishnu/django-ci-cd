@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 cd /var/lib/jenkins/workspace/django-cicd/
 
