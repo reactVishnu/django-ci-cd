@@ -12,6 +12,7 @@ pipeline {
         stage('Test Suite') {
             steps {
                 sh '''
+                source env/bin/activate
                 python3 your_project/manage.py test
                 '''
             }
