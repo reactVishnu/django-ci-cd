@@ -6,7 +6,7 @@ cd /var/lib/jenkins/workspace/django-cicd/your_project/
 
 python3 manage.py makemigrations
 python3 manage.py migrate
-python3 manage.py collectstatic -- no-input
+python3 manage.py collectstatic --noinput
 
 echo "Migrations done"
 
