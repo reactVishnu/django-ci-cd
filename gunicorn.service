@@ -7,7 +7,7 @@ After=network.target
 User=root
 Group=www-data
 WorkingDirectory=/var/lib/jenkins/workspace/django-cicd/your_project/
-ExecStart=/var/lib/jenkins/workspace/django-cicd/env/bin/gunicorn --workers 1 --log-level debug --error-logfile /var/lib/jenkins/workspace/django-cicd/error.log --bind unix:/run/gunicorn.sock app.wsgi:application
+ExecStart=/var/lib/jenkins/workspace/django-cicd/env/bin/gunicorn --workers 1 --log-level debug --error-logfile /var/lib/jenkins/workspace/django-cicd/error.log --bind unix:/run/gunicorn.sock your_project.wsgi:application
 
 [Install]
 WantedBy=multi-user.target
