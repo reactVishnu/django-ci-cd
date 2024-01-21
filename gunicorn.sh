@@ -2,7 +2,7 @@
 
 source env/bin/activate
 
-cd /var/lib/jenkins/workspace/directory_name/project_name
+cd /var/lib/jenkins/workspace/django-cicd/your_project/
 
 python3 manage.py makemigrations
 python3 manage.py migrate
@@ -10,7 +10,7 @@ python3 manage.py collectstatic -- no-input
 
 echo "Migrations done"
 
-cd /var/lib/jenkins/workspace/directory_name
+cd /var/lib/jenkins/workspace/django-cicd
 
 sudo cp -rf gunicorn.socket /etc/systemd/system/
 sudo cp -rf gunicorn.service /etc/systemd/system/
